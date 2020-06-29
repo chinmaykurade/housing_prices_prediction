@@ -66,3 +66,4 @@ df_train.to_csv("dataset/train_preprocessed.csv",index=False)
 
 #%%
 
+print(df_test.Fence)
