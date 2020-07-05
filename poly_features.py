@@ -42,8 +42,8 @@ X_test_poly = X_test_all[col_poly]**2
 X_train_poly.columns = [col+'_2' for col in col_poly]
 X_test_poly.columns = [col+'_2' for col in col_poly]
 
-X_train_all = pd.concat([X_train_all,X_train_poly],axis=1)
-X_test_all = pd.concat([X_test_all,X_test_poly],axis=1)
+X_train_all = pd.concat([df_train,X_train_poly],axis=1)
+X_test_all = pd.concat([df_test,X_test_poly],axis=1)
 
 #%%
 
